@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #dbedfa;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #49a6e9;
+    transition: all 200ms ease-in;
+    animation: 3s bounce infinite;
+    border: 1px solid;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.5);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.container button:hover{
+    color: #86cafa;
+}
+
+.container span{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    transition: all 300ms linear;
+}
+
+.show{
+    left: 0;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.sidebar-header button{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.close span{
+    transition: all 300ms;
+}
+
+.close span:hover{
+    transform: rotate(1turn);
+}
+
+.sidebar-body{
+    flex-grow: 1;
+}
+
+.social li{
+    padding: 15px;
+    transition: all 300ms ease-in;
+}
+
+.social li:hover{
+    background-color: #86cafa;
+}
+
+.social li a{
+    font-size: 32px;
+    color: #617d98;
+}
+
+.sidebar-footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+i{
+    font-size: 24px;
+    color: #49a6e9;
+    transition: all 300ms ease-in;
+}
+
+i:hover{
+    color: #617d98;
+}
