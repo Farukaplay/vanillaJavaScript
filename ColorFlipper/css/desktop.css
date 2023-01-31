@@ -1,0 +1,15 @@
+@media(min-width: 1280px){
+    
+    header .container nav{
+        width: 50%;
+    }
+
+    .container{
+        width: 1280px;
+    }
+
+    #color-title{
+        width: unset;
+        font-size: 40px;
+    }
+}

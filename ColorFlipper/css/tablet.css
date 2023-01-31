@@ -1,0 +1,16 @@
+@media(min-width: 768px){
+
+    header .container nav{
+        width: 80%;
+    }
+
+    #color-title{
+        width: unset;
+        font-size: 30px;
+    }
+
+    #button-color-change{
+        height: 60px;
+        font-size: 26px;
+    }
+}
