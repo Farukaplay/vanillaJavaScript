@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    color: #102a42;
+    background-color: #f1f5f8;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.person{
+    width: 620px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #ddd;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.person .image::before{
+    content: "format_quote";
+    font-family: "Material Symbols Outlined";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    left: 5px;
+    border-radius: 100%;
+    background-color: #49a6e9;
+    color: #fff;
+}
+
+.person .image img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.person .image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: #49a6e9;
+}
+
+#author{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#job{
+    font-size: 20px;
+    color: #49a6e9;
+    margin-bottom: 10px;
+}
+
+#info{
+    font-size: 18px;
+    color: #617d98;
+    margin-bottom: 15px;
+}
+
+.buttons button{
+    background-color: transparent;
+    border: none;
+    color: #49a6e9;
+    margin-bottom: 10px;
+
+}
+
+.buttons button span{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#button-random{
+    background-color: #ebf6fd;
+    border: 2px solid #49a6e9;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
