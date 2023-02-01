@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #102a42;
+}
+
+main{
+    height: 100vh;
+    background-image: url(https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg);   
+    background-position: center;
+    background-size: cover;
+}
+
+.container .banner-modal{
+    width: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.container button{
+    border: none;
+    height: 45px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: #49a6e9;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #49a6e9;
+    transition: all 300ms ease-in;
+    letter-spacing: 2px;
+}
+
+.container button:hover{
+    background-color: #fff;
+    color:#49a6e9;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(73, 166, 233,0.5);
+}
+
+.show-modal{
+    display: flex;
+}
+
+.modal div{
+    width: 620px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 30px 20px;
+    background-color: #fff;
+    /* justify-content: center; */
+}
+
+.modal button{
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.close span{
+    font-weight: bolder;
+}
+
+.modal h1{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
