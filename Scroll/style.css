@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Cascadia Code", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header.bg-white{
+    background-color: #fff;
+}
+
+header.bg-white nav a{
+    color: #222;
+    transition: all 300ms ease;
+}
+
+header.bg-white nav a:hover{
+    color: aqua;
+}
+
+header img{
+    height: 70px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 300ms ease;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+main{
+    color:#fff;
+}
+
+#banner{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url("https://vannilla-js-basic-project-10-scroll.netlify.app/hero-bcg.jpeg") center/cover no-repeat; 
+}
+
+#banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: rgba(63, 208, 212, 0.5); */
+}
+
+section .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+section p{
+    font-size: 18px;
+}
+
+.button-primary{
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 3px solid ;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#about{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url("https://vannilla-js-basic-project-10-scroll.netlify.app/hero-bcg.jpeg") center/cover no-repeat; 
+}
+
+#services{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url("https://vannilla-js-basic-project-10-scroll.netlify.app/hero-bcg.jpeg") center/cover no-repeat; 
+}
+
+#tours{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url("https://vannilla-js-basic-project-10-scroll.netlify.app/hero-bcg.jpeg") center/cover no-repeat; 
+}
