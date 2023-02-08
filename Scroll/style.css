@@ -26,6 +26,7 @@ header{
 
 header.bg-white{
     background-color: #fff;
+    box-shadow: 0 1px 10px rgb(109, 109, 109);
 }
 
 header.bg-white nav a{
